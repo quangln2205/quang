@@ -8,6 +8,7 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /*
 1.từ ngoài vào trong 
 2.từ trên xuống dưới
@@ -19,24 +20,26 @@ html {
 3.màu sắc
 4.kiểu dáng( kiểu chữ, hình tròn, hình vuông, ... )
 */
-#main{
-   
+
+#main {
+    /* Add any necessary styles */
 }
-#header{
-    height:46px;
-    background-color:#000
+
+#header {
+    height: 46px;
+    background-color: #000;
 }
-#nav , .subnav {
+
+#nav, .subnav {
     list-style-type: none;
 }
 
 #nav > li {
-    display:inline-block
+    display: inline-block;
 }
 
 #nav li {
-    position:relative;
-
+    position: relative;
 }
 
 #nav> li > a {
@@ -45,47 +48,40 @@ html {
 }
 
 #nav li a {
-    text-decoration:none ;
+    text-decoration:none;
     line-height: 46px;
     padding:0 24px;
-    display:inline-block;
+    /* display:inline-block; */
+}
 
+/* Add this */
+
+.subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 #nav li:hover .subnav {
-    display: block
+    display: block;
 }
 
-#nav > li:hover > a
-#nav .subnav li:hover a{
-    color:#000000;
-    background-color:#cccccc
+.subnav li {
+    width: 200px;
 }
 
-#nav li:hover a {
+.subnav li a {
+    display: block;
+    padding: 10px;
     color: #000;
-    background-color: #ccc
-
-}
-#nav .subnav {
-    display:none;
-    position:absolute;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0 0 0 0.3); 
+    text-decoration: none;
 }
 
-#nav .subnav a{
-    color:#000; 
-    padding:16px;
-}
-
-#slider{
-   
-    
-}
-#content{
-
-}
-#footer{
-
+.subnav li a:hover {
+    background-color: #ddd;
 }
