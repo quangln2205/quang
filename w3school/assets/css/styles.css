@@ -19,6 +19,10 @@ html {
 3.màu sắc
 4.kiểu dáng( kiểu chữ, hình tròn, hình vuông, ... )
 */
+.clear {
+    clear: both;
+}
+
 #main{
 
 }
@@ -195,6 +199,28 @@ html {
     text-align: justify;
     line-height: 1.4; /* khoảng cách giữa các dòng */
     
+}
+
+#content .member-list{
+    margin-top: 48px;
+    
+}
+
+#content .member-item {
+    float: left; /* nổi phần tử sang trái */
+    text-align: center;
+    width: 33,333% ;
+
+}
+
+#content .member-name{
+    font-size: 15px;
+}
+
+#content .member-img{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px; /* bo tròn */
 }
 
 #footer{
